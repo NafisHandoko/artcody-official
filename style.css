@@ -1,0 +1,11 @@
+:root{
+    --primary-dark-color: #0C212C;
+    --secondary-dark-color: #133344;
+    --primary-light-color: #FF014F;
+    --text-color: white;
+
+    --h1-size: 55px;
+    --h2-size: 48px;
+    --subtitle-fontsize: 36px;
+    --body-fontsize: 18px;
+}
