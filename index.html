@@ -9,13 +9,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div id="vertical-line"></div>
     <div class="header-about">
         <header>
-            <nav>
+            <div class="blurry-circle"></div>
+            <nav id="nav">
                 <div class="nav-container d-flex flex-row align-items-center justify-space-between">
-                    <h2 class="brand-logo">LOGO</h2>
+                    <h2 class="brand-logo">BRAND</h2>
                     <ul>
                         <li><a href="#home">HOME</a></li>
                         <li><a href="#about">ABOUT</a></li>
@@ -31,7 +35,7 @@
         <section id="about">
             <div class="container d-flex flex-col align-items-end justify-content-center">
                 <div class="about-card">
-                    <h2 class="brand-logo">LOGO</h2>
+                    <h2 class="brand-logo">BRAND</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in interdum vitae at metus quisque. Mi diam mattis ullamcorper volutpat enim odio mi proin mauris. Duis tellus integer malesuada adipiscing amet.
                     </p>
@@ -39,6 +43,7 @@
                 </div>
             </div>
         </section>
+        <div class="bgimg-to-bgcolor"></div>
     </div>
     <section id="value">
         <div class="container text-center d-flex flex-col align-items-center">
@@ -84,6 +89,22 @@
             </div>
         </div>
     </section>
-    <footer></footer>
+    <footer>
+        <div class="container d-flex flex-row align-items-center justify-space-between">
+            <h2 class="brand-logo">BRAND</h2>
+            <div class="social-icons">
+                <a href="#">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="bi bi-envelope"></i>
+                </a>
+                <a href="#">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
