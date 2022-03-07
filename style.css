@@ -167,7 +167,7 @@ header a{
     font-weight: 600;
 }
 
-.role-text{
+#role-text{
     color: var(--primary-light-color);
 }
 
@@ -303,6 +303,10 @@ footer i{
 .scrolled{
     background-color: var(--primary-dark-color) !important;
     transition: background-color 200ms linear;
+}
+
+.typed-cursor{
+    color: var(--primary-light-color);
 }
 
 @media (max-width:500px){

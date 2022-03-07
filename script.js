@@ -11,3 +11,10 @@ $(document).scroll(function () {
     var $nav = $("#nav");
     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
 });
+
+var typed = new Typed('#role-text', {
+    strings: ['Engineer.', 'Graphic Designer.', 'Web Developer.', 'Photographer.'],
+    loop: true,
+    typeSpeed: 50,
+    backSpeed: 50
+});
