@@ -12,7 +12,7 @@
     --border-radius: 21px;
 }
 
-h1,h2,p{
+h1,h2,h3,h4p{
     margin: 0;
     padding: 0;
 }
@@ -29,10 +29,12 @@ h1{
 
 h2{
     font-size: var(--h2-size);
+    font-weight: 700;
 }
 
 h3{
     font-size: var(--subtitle-fontsize);
+    font-weight: 700;
 }
 
 h4{
@@ -83,6 +85,10 @@ li{
     flex-direction: column;
 }
 
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
 .align-items-center{
     align-items: center;
 }
@@ -129,11 +135,13 @@ header,section,footer,nav{
 }
 
 header{
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 
 header nav{
     width: 100%;
+    position: fixed;
+    top: 0;
 }
 
 header nav li{
@@ -152,7 +160,7 @@ header a{
 }
 
 #home{
-    height: 80vh;
+    min-height: 100vh;
 }
 
 .we-make{
@@ -171,13 +179,14 @@ header a{
 }
 
 #about .container{
-    height: 70vh;
+    /* min-height: 70vh; */
+    padding-top: 50px;
 }
 
 .about-card{
     border-radius: var(--border-radius);
     background-color: rgba(19, 51, 68, 0.7);
-    max-width: 50%;
+    max-width: 600px;
     padding: 55px;
 }
 
@@ -203,7 +212,7 @@ header a{
     padding-top: 150px;
 }
 
-#value hr{
+.dark-hr{
     margin: 26px 0;
     border: 2px var(--secondary-dark-color) solid;
     width: 80%;
@@ -223,10 +232,47 @@ header a{
     margin-right: 16px;
 }
 
-.value-main{
+.value-main, .porto-main{
     margin-top: 57px;
 }
 
 .value-main img{
     margin-bottom: 52px;
+}
+
+#portfolio{
+    padding-top: 210px;
+}
+
+.porto-main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+.porto-card{
+    background-color: var(--primary-light-color);
+    border-radius: var(--border-radius);
+    /* padding: 20px 20px 0 20px; */
+    padding: 20px;
+}
+
+.porto-img{
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-position: top left;
+    border-radius: var(--border-radius);
+    margin-bottom: 30px;
+}
+
+.porto-card h3{
+    text-shadow: 0 4px 4px rgba(0,0,0,.25);
+}
+
+@media (max-width:500px){
+    .porto-main{
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
 }
