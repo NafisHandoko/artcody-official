@@ -4,9 +4,12 @@
     --primary-light-color: #FF014F;
     --text-color: white;
 
-    --h1-size: 55px;
-    --h2-size: 48px;
-    --subtitle-fontsize: 36px;
+    /* --h1-size: 55px; */
+    --h1-size: clamp(2rem, 4vw, 55px);
+    /* --h2-size: 48px; */
+    --h2-size: clamp(2rem, 3.5vw, 48px);
+    /* --subtitle-fontsize: 36px; */
+    --subtitle-fontsize: clamp(1.5rem, 3vw, 36px);
     --subtitle2-fontsize: 24px;
     --body-fontsize: 18px;
     --border-radius: 21px;
@@ -145,7 +148,7 @@ header,section,footer,nav{
     padding: 10px 0;
 }
 
-header nav li{
+.navlink-li{
     margin-left: 15px;
     margin-right: 15px;
 }
@@ -330,6 +333,12 @@ footer{
     .porto-main{
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
+    .porto-card{
+        padding: 10px;
+    }
+    .porto-img{
+        margin-bottom: 15px;
+    }
 }
 
 @media (max-width:768px){
@@ -338,5 +347,31 @@ footer{
     }
     .value-card{
         width: 100%;
+    }
+    #vertical-line{
+        display: none;
+    }
+    .nav-container{
+        flex-direction: column;
+    }
+    .cta-btn{
+        padding: 15px 35px;
+    }
+    .navlink-li{
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 16px;
+    }
+    #about p{
+        font-size: var(--body-fontsize);
+    }
+    .about-card{
+        padding: 45px;
+    }
+    footer .container{
+        flex-direction: column-reverse;
+    }
+    .social-icons{
+        margin-bottom: 10px;
     }
 }
