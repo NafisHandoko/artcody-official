@@ -1,8 +1,7 @@
 $(document).ready(function(){
-    var height = $(document).height();
-    $('#vertical-line').css('height', `${0.94*height}px`)
-    console.log(document.getElementsByTagName('section'))
-    console.log()
+    // var height = $(document).height();
+    var height = document.getElementById('footer').offsetTop
+    $('#vertical-line').css('height', `${1*height}px`)
 })
 
 $(window).resize(function(){

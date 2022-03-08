@@ -160,6 +160,11 @@ header a{
 .brand-logo{
     /* visibility: hidden; */
     font-size: 36px;
+    transition: all 0.3s ease-in-out;
+}
+
+.brand-logo:hover{
+    color: var(--primary-light-color);
 }
 
 #home{
