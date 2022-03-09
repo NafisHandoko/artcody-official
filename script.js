@@ -30,7 +30,7 @@ $(document).scroll(function () {
 });
 
 var typed = new Typed('#role-text', {
-    strings: ['Engineer.', 'Graphic Designer.', 'Web Developer.', 'Photographer.'],
+    strings: ['YOU^1000' ,'Engineer.', 'Graphic Designer.', 'Web Developer.', 'Photographer.'],
     loop: true,
     typeSpeed: 50,
     backSpeed: 50
