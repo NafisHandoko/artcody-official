@@ -6,12 +6,12 @@
     --porto-link-color: #FFE5ED;
 
     /* --h1-size: 55px; */
-    --h1-size: clamp(2rem, 4vw, 55px);
+    --h1-size: clamp(2rem, 4vw, 50px);
     /* --h2-size: 48px; */
-    --h2-size: clamp(2rem, 3.5vw, 48px);
+    --h2-size: clamp(2rem, 3.5vw, 42px);
     /* --subtitle-fontsize: 36px; */
-    --subtitle-fontsize: clamp(1.5rem, 3vw, 36px);
-    --subtitle2-fontsize: 24px;
+    --subtitle-fontsize: clamp(1.5rem, 3vw, 24px);
+    --subtitle2-fontsize: 18px;
     --body-fontsize: 18px;
     --border-radius: 21px;
 }
@@ -22,8 +22,8 @@ html{
 
 body{
     margin: 0;
+    overflow-x: hidden;
 }
-
 
 h1,h2,h3,h4,p{
     margin: 0;
@@ -38,6 +38,7 @@ h1,h2,h3,h4,p{
 h1{
     font-size: var(--h1-size);
     font-weight: 800;
+    z-index: 2;
 }
 
 h2{
@@ -159,6 +160,7 @@ header,section,footer,nav{
     margin-left: 15px;
     margin-right: 15px;
     position: relative;
+    font-size: 16px;
 }
 
 .navlink-li::after{
@@ -204,7 +206,7 @@ header a{
 
 .cta-btn{
     background-color: var(--primary-light-color);
-    padding: 20px 45px;
+    padding: 15px 35px;
     border-radius: 7px;
     margin-top: 30px;
 }
@@ -217,16 +219,12 @@ header a{
 .about-card{
     border-radius: var(--border-radius);
     background-color: rgba(19, 51, 68, 0.7);
-    max-width: 600px;
+    max-width: 480px;
     padding: 55px;
 }
 
 #about .brand-logo{
     margin-bottom: 15px;
-}
-
-#about p{
-    font-size: 24px;
 }
 
 #about hr{
@@ -246,7 +244,8 @@ header a{
 }
 
 .value-main{
-    width: 100%;
+    /* background-color: #FF014F; */
+    width: 80%;
 }
 
 .value-card{
@@ -261,13 +260,20 @@ header a{
     align-items: center;
     justify-content: end;
     padding-bottom: 50px;
+    padding-top: 30px;
     margin-left: 16px;
     margin-right: 16px;
     margin-bottom: 32px;
+    transition: all 0.3s ease-in-out;
+}
+
+.value-card:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transform: translateY(-20px);
 }
 
 .value-card h4{
-    margin-top: 20%;
+    margin-top: 25%;
 }
 
 .value-main, .porto-main{
@@ -279,17 +285,17 @@ header a{
 }
 
 .porto-main{
-    width: 100%;
+    width: 85%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 30px;
+    gap: 40px;
 }
 
 .porto-card{
     background-color: var(--primary-light-color);
     border-radius: var(--border-radius);
     /* padding: 20px 20px 0 20px; */
-    padding: 20px;
+    padding: 10px;
     position: relative;
 }
 
@@ -334,19 +340,20 @@ header a{
 .porto-link a{
     background-color: var(--porto-link-color);
     border-radius: var(--border-radius);
-    width: 65px;
-    height: 65px;
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .porto-link a:first-child{
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
 .porto-link i{
     color: var(--primary-dark-color);
+    font-size: 24px;
 }
 
 footer{
@@ -406,7 +413,7 @@ footer{
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
     .porto-card{
-        padding: 10px;
+        padding: 5px;
     }
     .porto-img{
         margin-bottom: 15px;
@@ -425,9 +432,6 @@ footer{
     }
     .nav-container{
         flex-direction: column;
-    }
-    .cta-btn{
-        padding: 15px 35px;
     }
     .navlink-li{
         margin-left: 10px;

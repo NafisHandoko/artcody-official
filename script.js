@@ -32,7 +32,7 @@ $(document).scroll(function () {
 });
 
 var typed = new Typed('#role-text', {
-    strings: ['YOU^1000' ,'Engineer.', 'Graphic Designer.', 'Web Developer.', 'Photographer.'],
+    strings: ['You^1000' ,'Engineer.', 'Graphic Designer.', 'Web Developer.', 'Photographer.'],
     loop: true,
     typeSpeed: 50,
     backSpeed: 50
