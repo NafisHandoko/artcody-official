@@ -287,8 +287,9 @@ header a{
 .porto-main{
     width: 85%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
     gap: 40px;
+    justify-content: center;
 }
 
 .porto-card{
