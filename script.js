@@ -1,13 +1,13 @@
 $(document).ready(function(){
     // var height = $(document).height();
     var height = document.getElementById('footer').offsetTop
-    $('#vertical-line').css('height', `${height}px`)
+    $('#vertical-line').css('height', `${0.95*height}px`)
 })
 
 $(window).resize(function(){
     // var height = $(document).height();
     var height = document.getElementById('footer').offsetTop
-    $('#vertical-line').css('height', `${height}px`)
+    $('#vertical-line').css('height', `${0.95*height}px`)
 });
 
 $(document).scroll(function () {

@@ -7,7 +7,7 @@
     <title>Artcody | Web Development & Design Agency</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -30,6 +30,7 @@
                         <li><a class="navlink-li home navlink-active" href="#home">HOME</a></li>
                         <li><a class="navlink-li about" href="#about">ABOUT</a></li>
                         <li><a class="navlink-li portfolio" href="#portfolio">PORTFOLIO</a></li>
+                        <li><a class="navlink-li contact-us" href="#contact-us">CONTACT US</a></li>
                     </ul>
                 </div>
             </nav>
@@ -136,13 +137,34 @@
             </div>
         </div>
     </section>
+    <section id="contact-us" class="navlink-target">
+        <div class="container d-flex flex-col align-items-center">
+            <h2 class="text-center" data-aos="zoom-in">How we can help you?</h2>
+            <hr class="dark-hr">
+            <p class="text-center" data-aos="zoom-in">
+                Fill out the form and we'll be in touch soon!
+            </p>
+            <div class="contact-main d-flex flex-col align-items-center">
+                <div class="email-subject contact-input" data-aos="zoom-in">
+                    <label for="email-subject">Subject</label>
+                    <input type="text" id="email-subject" placeholder="your subject here">
+                </div>
+                <div class="email-body contact-input" data-aos="zoom-in">
+                    <label for="email-body">Message</label>
+                    <textarea type="text" id="email-body" placeholder="your message here"></textarea>
+                </div>
+                <button data-aos="zoom-in">Submit</button>
+            </div>
+        </div>
+    </section>
     <footer id="footer">
         <div class="container d-flex flex-row align-items-center justify-space-between">
             <div class="footer-brand d-flex flex-row align-items-center">
                 <img src="https://nafishandoko.github.io/artcody-official/assets/icons/artcody.svg" alt="artcody" width="35">
                 <h2 class="brand-logo">Artcody</h2>
             </div>
-            <div class="social-icons">
+            <p>Copyright 2022 | Artcody</p>
+            <div class="social-icons d-flex flex-row justify-content-end">
                 <a href="#">
                     <i class="bi bi-instagram"></i>
                 </a>
